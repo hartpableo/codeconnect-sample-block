@@ -1,0 +1,14 @@
+.button-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+@media all and (min-width: 768px) {
+  .button-group {
+    flex-direction: row;
+  }
+}

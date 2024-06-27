@@ -1,0 +1,19 @@
+.link-with-arrow {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--c-turquoise);
+}
+
+.link-with-arrow::after {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+  content: url(../../images/ArrowUpRight.svg);
+}
+
+.link-with-arrow:hover,
+.link-with-arrow:focus {
+  text-decoration: underline;
+  text-underline-offset: .35em;
+}

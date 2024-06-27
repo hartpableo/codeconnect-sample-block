@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --c-turquoise: #007173;
+  --c-persian-green: #009496;
+  --c-pearl-bush: #F1EAE6;
+  --c-black: #000;
+  --c-white: #fff;
+  --c-ebony: #0F1828;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
