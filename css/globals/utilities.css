@@ -5,11 +5,12 @@
 }
 
 .highlight {
+  --color: var(--c-turquoise);
   font-family: var(--ff-secondary);
   font-size: 1.5em;
   font-weight: 400;
   line-height: .73;
-  color: var(--c-turquoise);
+  color: var(--color);
 }
 
 /* Flex system (used in columns) */

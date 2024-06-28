@@ -60,13 +60,21 @@
 */
 
 /* Gradient background */
-.has-dual-bg-light {
+.is-dual-bg-light {
   background: linear-gradient(to right, var(--c-pearl-bush) 70%, var(--c-persian-green) 30%);
 }
 
-/* Media position */
-.is-dual-bg-light {
-  background: linear-gradient(to right, var(--c-pearl-bush) 70%, var(--c-persian-green) 30%);
+.is-dual-bg-dark {
+  color: var(--c-pearl-bush);
+  background: linear-gradient(to right, var(--c-tiber) 70%, var(--c-peach-schnapps) 30%);
+}
+
+.is-dual-bg-dark .content-media__info-heading {
+  color: var(--c-white);
+}
+
+.is-dual-bg-dark .highlight {
+  --color: var(--c-peach-schnapps);
 }
 
 /* Media position */
@@ -76,6 +84,10 @@
 
 .is-media-left.is-dual-bg-light {
   background: linear-gradient(to left, var(--c-pearl-bush) 70%, var(--c-persian-green) 30%);
+}
+
+.is-media-left.is-dual-bg-dark {
+  background: linear-gradient(to left, var(--c-tiber) 70%, var(--c-peach-schnapps) 30%);
 }
 
 /* Image rendering */
