@@ -1,7 +1,22 @@
-.content-media {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
-  column-gap: 22px;
+.content-media__row {
+  align-items: center;
+}
+
+.content-media__row .col {
+  --column-width: 50%;
+}
+
+.content-media__media {
+  position: relative;
+  padding-top: 100%;
+  overflow: hidden;
+}
+
+.content-media__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
 }

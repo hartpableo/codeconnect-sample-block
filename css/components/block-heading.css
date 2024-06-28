@@ -3,6 +3,7 @@
 }
 
 .block-heading__subtitle {
+  display: block;
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 600;

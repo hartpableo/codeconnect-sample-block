@@ -7,6 +7,20 @@
 .highlight {
   font-family: var(--ff-secondary);
   font-size: 1.5em;
+  font-weight: 400;
   line-height: .73;
   color: var(--c-turquoise);
+}
+
+/* Flex system (used in columns) */
+.row {
+  margin-inline: -1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row > .col {
+  --column-width: 100%;
+  flex: 0 0 var(--column-width);
+  max-width: var(--column-width);
 }
