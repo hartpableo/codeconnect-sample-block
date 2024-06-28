@@ -1,3 +1,8 @@
+.content-media {
+  --padding-t: 76px;
+  padding-top: var(--padding-t);
+}
+
 .content-media__row {
   align-items: stretch;
 }
@@ -12,13 +17,17 @@
 
 .content-media__info {
   --padding-y: 119px;
-  padding: var(--padding-y) 0;
+  padding: calc(var(--padding-y) - var(--padding-t)) 0 var(--padding-y);
   max-width: 480px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .content-media__media {
-  position: absolute;
-  right: 0;
+  position: relative;
   bottom: 0;
   width: 100%;
   max-width: 604px;
@@ -39,4 +48,8 @@
   height: 100%;
   object-position: center;
   object-fit: cover;
+}
+
+.has-dual-bg-light {
+  background: linear-gradient(to right, var(--c-pearl-bush) 70%, var(--c-persian-green) 30%);
 }
