@@ -12,6 +12,7 @@
   --c-black: #000;
   --c-white: #fff;
   --c-ebony: #0F1828;
+  --c-tiber: #09443E;
 
   /* Fonts */
   --ff-primary: "General Sans";
@@ -27,4 +28,9 @@ body {
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
