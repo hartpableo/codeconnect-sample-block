@@ -1,5 +1,5 @@
 .content-media__row {
-  align-items: center;
+  align-items: stretch;
 }
 
 .content-media__row .col {
@@ -11,14 +11,25 @@
 }
 
 .content-media__info {
+  --padding-y: 119px;
+  padding: var(--padding-y) 0;
   max-width: 480px;
 }
 
 .content-media__media {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 604px;
+  border-radius: 1000px 1000px 0 0;
+  overflow: hidden;
+}
+
+.content-media__image-wrapper {
   position: relative;
   padding-top: 100%;
   overflow: hidden;
-  border-radius: 1000px 1000px 0 0;
 }
 
 .content-media__image {
