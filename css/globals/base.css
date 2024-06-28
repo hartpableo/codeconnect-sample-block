@@ -26,6 +26,14 @@ body {
   font-family: var(--ff-primary);
 }
 
+p {
+  margin: 0;
+}
+
+p + p {
+  margin-top: 1em;
+}
+
 a {
   text-decoration: none;
 }

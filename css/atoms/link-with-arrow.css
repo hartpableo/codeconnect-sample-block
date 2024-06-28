@@ -3,6 +3,7 @@
   font-size: 16px;
   font-weight: 600;
   color: var(--c-turquoise);
+  margin-top: 24px;
 }
 
 .link-with-arrow::after {
