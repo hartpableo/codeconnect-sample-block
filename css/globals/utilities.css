@@ -23,4 +23,5 @@
   --column-width: 100%;
   flex: 0 0 var(--column-width);
   max-width: var(--column-width);
+  padding-inline: 1rem;
 }

@@ -19,6 +19,7 @@
 }
 
 body {
+  margin: 0;
   font-size: 18px;
   line-height: 1.4;
   font-family: var(--ff-primary);
