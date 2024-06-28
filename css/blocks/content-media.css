@@ -6,10 +6,19 @@
   --column-width: 50%;
 }
 
+.content-media__row .col:has(.content-media__media) {
+  position: relative;
+}
+
+.content-media__info {
+  max-width: 480px;
+}
+
 .content-media__media {
   position: relative;
   padding-top: 100%;
   overflow: hidden;
+  border-radius: 1000px 1000px 0 0;
 }
 
 .content-media__image {
