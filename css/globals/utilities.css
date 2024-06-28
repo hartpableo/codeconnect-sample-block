@@ -5,6 +5,7 @@
 }
 
 .highlight {
+  font-family: var(--ff-secondary);
   font-size: 1.5em;
   line-height: .73;
   color: var(--c-turquoise);

@@ -5,17 +5,23 @@
 }
 
 :root {
+  /* Colors */
   --c-turquoise: #007173;
   --c-persian-green: #009496;
   --c-pearl-bush: #F1EAE6;
   --c-black: #000;
   --c-white: #fff;
   --c-ebony: #0F1828;
+
+  /* Fonts */
+  --ff-primary: "General Sans";
+  --ff-secondary: "Gotcha";
 }
 
 body {
   font-size: 18px;
   line-height: 1.4;
+  font-family: var(--ff-primary);
 }
 
 a {
