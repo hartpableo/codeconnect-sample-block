@@ -62,9 +62,14 @@
 }
 
 /* Media position */
-.has-media-left .col:has(.content-media__media) {
+.is-dual-bg-light {
+  background: linear-gradient(to right, var(--c-pearl-bush) 70%, var(--c-persian-green) 30%);
+}
+
+/* Media position */
+.is-media-left .col:has(.content-media__media) {
   order: -1;
 }
-.has-media-left.has-dual-bg-light {
+.is-media-left.is-dual-bg-light {
   background: linear-gradient(to left, var(--c-pearl-bush) 70%, var(--c-persian-green) 30%);
 }
