@@ -29,11 +29,30 @@
     .content-media + .content-media {
       margin-top: 3rem;
     }
+
+    .desc {
+      margin: 2rem auto;
+    }
+
+    code {
+      background-color: rgba(0,0,0,0.75);
+      padding: .15em .25em;
+      border-radius: 6px;
+      color: rgb(243, 164, 18);
+    }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="container" style="margin-bottom: 6rem;">
     <h1>Content Media</h1>
+    <p>Base class: <code>content-media</code></p>
+  </div>
+
+  <div class="desc">
+    <div class="container">
+      <h2>Hero</h2>
+      <p>Modifer classes: <code>content-media--hero</code> <code>is-dual-bg-light</code></p>
+    </div>
   </div>
 
   <section class="content-media content-media--hero is-dual-bg-light">
@@ -73,6 +92,13 @@
     </div>
   </section>
 
+  <div class="desc">
+    <div class="container">
+      <h2>Dark BG</h2>
+      <p>Modifer classes: <code>is-dual-bg-dark</code></p>
+    </div>
+  </div>
+
   <section class="content-media is-dual-bg-dark">
     <div class="container">
       <div class="content-media__row row">
@@ -88,6 +114,10 @@
             
             <div class="content-media__info-body">
               <p>In ornare et eget commodo consectetur mauris nec. Risus leo ultricies adipiscing commodo ipsum interdum vulputate. Ut magna et mollis et.</p>
+            </div>
+
+            <div class="button-group">
+              <a href="#" class="button button--primary-light">Submit Enquiry</a>
             </div>
     
           </div>
@@ -105,6 +135,13 @@
       </div>
     </div>
   </section>
+
+  <div class="desc">
+    <div class="container">
+      <h2>Light BG + Media left + Cutout Image (contained)</h2>
+      <p>Modifer classes: <code>is-dual-bg-light</code> <code>is-media-left</code> <code>is-image-contained</code></p>
+    </div>
+  </div>
 
   <section class="content-media is-dual-bg-light is-media-left is-image-contained">
     <div class="container">
@@ -125,6 +162,48 @@
             </div>
     
             <a href="#" class="link-with-arrow">Learn more about us</a>
+          </div>
+  
+        </div>
+  
+        <div class="col">
+          <div class="content-media__media">
+            <div class="content-media__image-wrapper">
+              <img class="content-media__image" src="images/man-in-wheelchair.png" alt="man in wheelchair smiling" decoding="async" loading="lazy" width="1296" height="972">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="desc">
+    <div class="container">
+      <h2>Dark BG + Media left + Cutout Image (contained)</h2>
+      <p>Modifer classes: <code>is-dual-bg-dark</code> <code>is-media-left</code> <code>is-image-contained</code></p>
+    </div>
+  </div>
+
+  <section class="content-media is-dual-bg-dark is-media-left is-image-contained">
+    <div class="container">
+      <div class="content-media__row row">
+        
+        <div class="col">
+        
+          <div class="content-media__info">
+            <h2 class="content-media__info-heading block-heading">
+              <span class="block-heading__subtitle">About us</span>
+              <span class="block-heading__title">
+                <span class="highlight">Love where you live</span> with Marameo
+              </span>
+            </h2>
+            
+            <div class="content-media__info-body">
+              <p>Facilisis viverra aliquam nisi at sit platea laoreet nisi ipsum. At nunc malesuada integer etiam. Sit phasellus facilisi gravida fringilla volutpat egestas. Imperdiet nec sit magna pharetra facilisi habitant at. Pellentesque nam pellentesque ullamcorper eget non risus. Lobortis non imperdiet auctor urna morbi pulvinar vestibulum. In in mi in mi vel.</p>
+            </div>
+    
+            <a href="#" class="link-with-arrow link-with-arrow--light">Learn more about us</a>
           </div>
   
         </div>

@@ -18,3 +18,11 @@
   text-decoration: underline;
   text-underline-offset: .35em;
 }
+
+.link-with-arrow--light {
+  color: var(--c-robins-egg-blue);
+}
+
+.link-with-arrow--light::after {
+  filter: brightness(0) saturate(100%) invert(62%) sepia(32%) saturate(5551%) hue-rotate(141deg) brightness(95%) contrast(103%);
+}

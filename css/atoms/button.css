@@ -29,3 +29,13 @@
 .button--secondary:focus {
   color: var(--c-turquoise);
 }
+
+.button--primary-light {
+  background-color: var(--c-robins-egg-blue);
+  color: var(--c-ebony);
+}
+
+.button--primary-light:hover,
+.button--primary-light:focus {
+  filter: brightness(1.25);
+}
