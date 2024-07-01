@@ -121,3 +121,22 @@
 .content-media--hero .content-media__info {
   max-width: 477px;
 }
+
+/* Image overlapped */
+.is-image-overlapped {
+  margin-top: 140px;
+}
+
+.is-image-overlapped .content-media__media {
+  margin: -120px 0 0;
+  max-width: 484px;
+}
+
+/* Contained */
+.container .content-media {
+  border-radius: 16px;
+}
+
+.container .content-media .container {
+  max-width: 1190px;
+}
