@@ -169,6 +169,31 @@
   }
 }
 
+/* Square Image */
+.is-image-square {
+  --padding-y: 80px;
+  padding: var(--padding-y) 0;
+}
+
+.is-image-square .content-media__row {
+  align-items: flex-start;
+}
+
+.is-image-square .content-media__media {
+  border-radius: 0;
+}
+
+.is-image-square .content-media__info {
+  padding: 0;
+}
+
+@media all and (min-width: 992px) {
+  .is-image-square .content-media__media {
+    max-width: 640px;
+    margin: 40px 0 0;
+  }
+}
+
 /* Contained */
 .content-media--contained {
   border-radius: 16px;
