@@ -1,0 +1,63 @@
+.step-cards {
+    padding: 0;
+    list-style: none;
+    counter-reset: steps;
+}
+
+.step-card {
+    padding: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--c-pearl-bush);
+    background-color: var(--c-bottle-green);
+    border-radius: 12px;
+}
+
+.step-card + .step-card {
+    margin-top: .5rem;
+}
+
+.step-card::before {
+    counter-increment: steps;
+    content: "0" counter(steps);
+    color: var(--c-peach-yellow);
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: var(--ff-tertiary);
+    line-height: 1;
+    letter-spacing: 0.5px;
+    position: static;
+}
+
+.step-card__info {
+    margin-top: 10px;
+}
+
+.step-card__title {
+    color: var(--c-white);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.3;
+    margin: 0 0 8px;
+}
+
+@media all and (min-width: 992px) {
+    .step-card {
+        padding: 24px 33px;
+        display: flex;
+    }
+
+    .step-card__info {
+        margin-top: 0;
+    }
+
+    .step-card__title {
+        font-size: 26px;
+    }
+
+    .step-card::before {
+        margin-right: 32px;
+        margin-top: 2px;
+    }
+}

@@ -16,10 +16,13 @@
   --c-peach-schnapps: #FFE1D6;
   --c-robins-egg-blue: #00BFC3;
   --c-scorpion: #5E5E5E;
+  --c-bottle-green: #0B3938;
+  --c-peach-yellow: #FAE6AA;
 
   /* Fonts */
   --ff-primary: "General Sans";
   --ff-secondary: "Gotcha";
+  --ff-tertiary: "Geist Mono";
 }
 
 body {
