@@ -47,7 +47,7 @@
   object-fit: cover;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 992px) {
   .content-media {
     padding-top: 0;
   }
@@ -94,7 +94,7 @@
   --color: var(--c-peach-schnapps);
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 992px) {
   .is-dual-bg-light {
     background: linear-gradient(to right, var(--c-pearl-bush) 70%, var(--c-persian-green) 30%);
   }
@@ -136,7 +136,7 @@
 }
 
 /* Hero variant */
-@media all and (min-width: 768px) {
+@media all and (min-width: 992px) {
   .content-media--hero .content-media__info {
     padding-top: 341px;
     padding-bottom: 185px;

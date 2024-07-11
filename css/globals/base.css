@@ -20,11 +20,6 @@
   /* Fonts */
   --ff-primary: "General Sans";
   --ff-secondary: "Gotcha";
-
-  /* Breakpoints */
-  --md: 768px;
-  --lg: 992px;
-  --xl: 1200px;
 }
 
 body {
