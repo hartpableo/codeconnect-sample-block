@@ -6,10 +6,19 @@
   flex-wrap: wrap;
   gap: .5rem;
   margin-top: 32px;
+  width: 100%;
+}
+
+.button-group > .button {
+  width: 100%;
 }
 
 @media all and (min-width: 768px) {
   .button-group {
     flex-direction: row;
+  }
+
+  .button-group > .button {
+    width: auto;
   }
 }

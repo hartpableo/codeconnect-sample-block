@@ -16,8 +16,6 @@
 /* Flex system (used in columns) */
 .row {
   margin-inline: -1rem;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .row > .col {
@@ -25,6 +23,21 @@
   flex: 0 0 var(--column-width);
   max-width: var(--column-width);
   padding-inline: 1rem;
+}
+
+.row > .col + .col {
+  margin-top: 1rem;
+}
+
+@media all and (min-width: 768px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .row > .col + .col {
+    margin-top: 0;
+  }
 }
 
 /* Screen reader text */

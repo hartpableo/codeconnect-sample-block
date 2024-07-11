@@ -1,13 +1,5 @@
-/* .content-media {
-  padding-top: 80px;
-} */
-
-.content-media__row {
-  align-items: flex-end;
-}
-
-.content-media__row .col {
-  --column-width: 50%;
+.content-media {
+  padding-top: 64px;
 }
 
 .content-media__row .col:has(.content-media__media) {
@@ -19,9 +11,8 @@
 }
 
 .content-media__info {
-  --padding-y: 119px;
+  --padding-y: 0;
   padding: var(--padding-y) 0;
-  max-width: 575px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -30,13 +21,15 @@
 }
 
 .content-media__media {
-  margin-top: 76px;
+  --dimensions: 604px;
+  margin-top: calc(52px - 1rem); /* Subtracted 1rem since this is the assigned row gap for the columns on mobile */
   position: relative;
-  bottom: 0;
   width: 100%;
-  max-width: 604px;
   border-radius: 1000px 1000px 0 0;
   overflow: hidden;
+  max-width: var(--dimensions);
+  max-height: var(--dimensions);
+  margin-inline: auto;
 }
 
 .content-media__image-wrapper {
@@ -54,6 +47,30 @@
   object-fit: cover;
 }
 
+@media all and (min-width: 768px) {
+  .content-media {
+    padding-top: 0;
+  }
+
+  .content-media__row {
+    align-items: flex-end;
+  }
+
+  .content-media__row .col {
+    --column-width: 50%;
+  }
+
+  .content-media__info {
+    --padding-y: 119px;
+    max-width: 575px;
+  }
+
+  .content-media__media {
+    margin-top: 76px;
+    margin-inline: unset;
+  }
+}
+
 /**
 * ==============
 * Modifiers
@@ -61,12 +78,12 @@
 
 /* Gradient background */
 .is-dual-bg-light {
-  background: linear-gradient(to right, var(--c-pearl-bush) 70%, var(--c-persian-green) 30%);
+  background: var(--c-pearl-bush);
 }
 
 .is-dual-bg-dark {
   color: var(--c-pearl-bush);
-  background: linear-gradient(to right, var(--c-tiber) 70%, var(--c-peach-schnapps) 30%);
+  background: var(--c-tiber);
 }
 
 .is-dual-bg-dark .content-media__info-heading {
@@ -75,6 +92,16 @@
 
 .is-dual-bg-dark .highlight {
   --color: var(--c-peach-schnapps);
+}
+
+@media all and (min-width: 768px) {
+  .is-dual-bg-light {
+    background: linear-gradient(to right, var(--c-pearl-bush) 70%, var(--c-persian-green) 30%);
+  }
+
+  .is-dual-bg-dark {
+    background: linear-gradient(to right, var(--c-tiber) 70%, var(--c-peach-schnapps) 30%);
+  }
 }
 
 /* Media position */
@@ -109,17 +136,19 @@
 }
 
 /* Hero variant */
-.content-media--hero .content-media__info {
-  padding-top: 341px;
-  padding-bottom: 185px;
-}
+@media all and (min-width: 768px) {
+  .content-media--hero .content-media__info {
+    padding-top: 341px;
+    padding-bottom: 185px;
+  }
 
-.content-media--hero .block-heading__title {
-  font-size: 48px;
-}
+  .content-media--hero .block-heading__title {
+    font-size: 48px;
+  }
 
-.content-media--hero .content-media__info {
-  max-width: 477px;
+  .content-media--hero .content-media__info {
+    max-width: 477px;
+  }
 }
 
 /* Image overlapped */
